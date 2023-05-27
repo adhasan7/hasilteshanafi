@@ -1,0 +1,30 @@
+// Get All ApiSettings
+GET http://localhost:5000/api/apisettings
+
+###
+// Get Single ApiSetting
+GET http://localhost:5000/api/apisettings/3e30e988-0854-4c40-a818-fcf41987e726
+
+###
+// POST Data ApiSetting
+POST http://localhost:5000/api/apisettings
+Content-Type: application/json
+
+{
+    "http": "https://api.github.com/api",
+    "token": "djhd39dh93dhx983d83d93xdu082u18ednodd3109o"
+}
+
+###
+// Edit Data ApiSetting
+PATCH http://localhost:5000/api/apisettings/dc7590fb-778a-4059-846a-1710ab577d62
+Content-Type: application/json
+
+{
+    "http": "https://edited.api/api",
+    "token": "dwauihdwDhdui2hdu2hdedit"
+}
+
+###
+// Delete Data ApiSetting
+DELETE http://localhost:5000/api/apisettings/dc7590fb-778a-4059-846a-1710ab577d62

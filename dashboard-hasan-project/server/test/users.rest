@@ -1,0 +1,52 @@
+//Create a User
+POST http://localhost:5000/api/users
+Content-Type: application/json
+
+{
+    "name": "Robert St",
+    "email": "robert.st@gmail.com",
+    "password": "password",
+    "confPassword": "password",
+    "role": "user",
+    "status": "inactive"
+}
+
+###
+// Get All User
+GET http://localhost:5000/api/users
+
+###
+// Get Single User
+GET http://localhost:5000/api/users/c1654870-1248-4611-b5a8-e32c3f51660a
+
+###
+// Update User
+PATCH http://localhost:5000/api/users/834a494e-778e-4e87-9c47-b921329fe8cb
+Content-Type: application/json
+
+{
+    "name": "Hanafi Batang Updated",
+    "email": "hanafi@gmail.com",
+    "password": "123456",
+    "confPassword": "123456",
+    "role": "admin",
+    "status": "active"
+}
+
+###
+// Delete User
+DELETE http://localhost:5000/api/users/ae0dc733-e85c-429b-93c4-684ab3185f7b
+
+###
+// For New One User
+POST http://localhost:5000/api/users-new
+Content-Type: application/json
+
+{
+    "name": "user",
+    "email": "userx@gmail.com",
+    "password": "password",
+    "confPassword": "password",
+    "role": "user",
+    "status": "active"
+}

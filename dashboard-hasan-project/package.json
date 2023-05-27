@@ -1,0 +1,17 @@
+{
+  "name": "dashboard-hasan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install-server": "npm install --prefix server",
+    "install-client": "npm install --prefix client",
+    "install-all": "npm install && npm run install-server && npm run install-client",
+    "server": "npm start --prefix server",
+    "client": "npm run dev --prefix client",
+    "dev": "npm-run-all --parallel server client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

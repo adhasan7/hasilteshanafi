@@ -1,0 +1,41 @@
+Table LED Text					[DONE]
+- id
+- text	| varchar
+
+Table DateTime					[DONE]
+- id
+- tanggal | varchar
+- bulan	| varchar
+- tahun	| varchar
+- jam | varchar | nullable
+
+Table Workday					[DONE]
+- id
+- startDate | date
+- endDate | date
+- count | int
+- type | varchar
+
+Controllers Workday : setiap update start end workday, data pada dayoff selain range tanggal yang diupdate di workday, dihapus aja
+
+Table DayOff					[DONE]
+- id | bigInt
+- idWorkday | int
+- date
+
+Table user					[DONE]
+- id 
+- name
+- email
+- password
+- role
+- status
+- createDate
+
+API Settings					[DONE]
+- id
+- http
+- token
+
+Cronjob
+

@@ -1,0 +1,13 @@
+cara setupnya tinggal copy paste command ini di terminal
+
+```
+npm run install-all && npm run dev
+```
+
+kode diatas melakukan instalasi sekaligus menjalankan projek,
+namun jika sudah melakukan instalasi dan ingin langsung menjalankan projek,
+hanya perlu menjalankan command ini diterminal
+
+```
+npm run dev
+```

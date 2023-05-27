@@ -1,0 +1,32 @@
+// Login as Admin
+POST http://localhost:5000/login
+Content-Type: application/json
+X-No-Authorization: 1
+
+{
+    "email": "adminx@gmail.com",
+    "password": "password"
+}
+
+
+###
+// Login as user
+POST http://localhost:5000/login
+Content-Type: application/json
+X-No-Authorization: 1
+
+{
+    "email": "robert.st@gmail.com",
+    "password": "password"
+}
+
+###
+// Get data User
+GET http://localhost:5000/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiNDY1NDNhZGItYWIyOC00NTQ0LWI3YTMtMzI2N2QxNjE4NzliIiwibmFtZSI6IlJvYmVydCBTdCIsImVtYWlsIjoicm9iZXJ0LnN0QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwic3RhdHVzIjoiYWN0aXZlIn0sImlhdCI6MTY4NTA3MTY5MiwiZXhwIjoxNjg3NjYzNjkyfQ.U0x8wJfiIlmYrSNGoEcI7RHHHSMFJQAC2Ugk1eMyhy4
+
+
+###
+// Logout a user
+DELETE http://localhost:5000/logout
+

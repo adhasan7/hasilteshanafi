@@ -1,0 +1,32 @@
+// Get All DayOffs
+GET http://localhost:5000/api/dayoffs
+
+###
+GET http://localhost:5000/api/dayoffs/2/2024-01-04
+
+###
+// Get Single DayOff
+GET http://localhost:5000/api/dayoffs/afb15138-3ec8-4fa0-b592-558b8dd10449
+
+###
+// POST Data DayOff
+POST http://localhost:5000/api/dayoffs
+Content-Type: application/json
+
+{
+    "workdayId": 1,
+    "date": "2021-10-13"
+}
+
+###
+// Edit Data DayOff
+PATCH http://localhost:5000/api/dayoffs/afb15138-3ec8-4fa0-b592-558b8dd10449
+Content-Type: application/json
+
+{
+    "date": 1
+}
+
+###
+// Delete Data DayOff
+DELETE http://localhost:5000/api/dayoffs/dc7590fb-778a-4059-846a-1710ab577d62

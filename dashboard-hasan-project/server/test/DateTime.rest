@@ -1,0 +1,35 @@
+// Get All DateTimes
+GET http://localhost:5000/api/datetimes
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiODY4YjkwOWItZWQzOS00MGNhLThiM2ItMjk2OWMzZDBhMTZlIiwibmFtZSI6IkFkbWluaXN0cmF0b3IiLCJlbWFpbCI6ImFkbWlueEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJzdGF0dXMiOiJhY3RpdmUifSwiaWF0IjoxNjg1MDc0MzQwLCJleHAiOjE2ODc2NjYzNDB9.t_5df8C-EPw2mCmFTaN1n7fap4KzfkT2zc9DueMzZLI
+
+###
+// Get Single DateTime
+GET http://localhost:5000/api/datetimes/3e30e988-0854-4c40-a818-fcf41987e726
+
+###
+// POST Data DateTime
+POST http://localhost:5000/api/datetimes
+Content-Type: application/json
+
+{
+    "date": "24",
+    "month": "02",
+    "year": "2001",
+    "time": "09:00"
+}
+
+###
+// Edit Data DateTime
+PATCH http://localhost:5000/api/datetimes/11256286-75ea-46cb-b855-6e0a433e30bf
+Content-Type: application/json
+
+{
+    "date": "13",
+    "month": "12",
+    "year": "2000",
+    "time": "09:00"
+}
+
+###
+// Delete Data DateTime
+DELETE http://localhost:5000/api/datetimes/dc7590fb-778a-4059-846a-1710ab577d62

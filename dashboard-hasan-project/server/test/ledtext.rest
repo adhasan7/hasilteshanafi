@@ -1,0 +1,29 @@
+// Get All LedTexts
+GET http://localhost:5000/api/ledtexts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiODY4YjkwOWItZWQzOS00MGNhLThiM2ItMjk2OWMzZDBhMTZlIiwibmFtZSI6IkFkbWluaXN0cmF0b3IiLCJlbWFpbCI6ImFkbWlueEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJzdGF0dXMiOiJhY3RpdmUifSwiaWF0IjoxNjg1MDc0MzQwLCJleHAiOjE2ODc2NjYzNDB9.t_5df8C-EPw2mCmFTaN1n7fap4KzfkT2zc9DueMzZLI
+
+###
+// Get Single LedText
+GET http://localhost:5000/api/ledtexts/84c5c134-9d49-4496-8d37-1fc6b3318010
+
+###
+// POST Data LedText
+POST http://localhost:5000/api/ledtexts
+Content-Type: application/json
+
+{
+    "text": "Heiiiii"
+}
+
+###
+// Edit Data LedText
+PATCH http://localhost:5000/api/ledtexts/64fcad13-5259-4909-abe5-718fcf528785
+Content-Type: application/json
+
+{
+    "text": "LED Text Edited by MRX"
+}
+
+###
+// Delete Data LedText
+DELETE http://localhost:5000/api/ledtexts/84c5c134-9d49-4496-8d37-1fc6b3318010

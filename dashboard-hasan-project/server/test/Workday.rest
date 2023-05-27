@@ -1,0 +1,31 @@
+// Get All Workdays
+GET http://localhost:5000/api/workdays
+
+###
+// Get Single Workday
+GET http://localhost:5000/api/workdays/a84a5d88-9ff4-4675-a275-37a1868838e9
+
+###
+// POST Data Workday
+POST http://localhost:5000/api/workdays
+Content-Type: application/json
+
+{
+    "startDate": "2023-01-01",
+    "endDate": "2023-12-31",
+    "type": "contactor"
+}
+
+###
+// Edit Data Workday
+PATCH http://localhost:5000/api/workdays/1
+Content-Type: application/json
+
+{
+    "startDate": "2023-01-01",
+    "endDate": "2023-12-31"
+}
+
+###
+// Delete Data Workday
+DELETE http://localhost:5000/api/workdays/dc7590fb-778a-4059-846a-1710ab577d62
